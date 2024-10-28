@@ -8,12 +8,27 @@ option go_package="github.com/sergeyiksanov/NotificationService/pkg/api/v1;v1";
 service Email {
   rpc CreateMessageByUserIds(CreateMessageByUserIdRequest) returns (google.protobuf.empty); 
   rpc SendRegisterConfirm(SendRegisterConfirmRequest) returns (SendRegisterConfirmResponse);
-  rpc SendResetPasswordConfirm() returns();
+  rpc SendResetPasswordConfirm(SendResetPasswordConfirmRequest) returns(SendResetPasswordConfirmResponse);
 }
 
 message CreateMessageByUserIdRequest {
-  int64[] ids = 1;
+  repeated string emails = 1 [packed=true];
   string message_title = 2;
   string message_body = 3
   google.protobuf.timestamp time = 4;
+}
+
+message SendRegisterConfirmRequest {
+  string email = 1;
+}
+
+message SendRegisterConfirmResponse {
+  int64 code = 1;
+}
+
+message SendResetPasswordConfirmRequest {
+  string email = 1;
+}
+
+message SendResetPasswordConfirmResponse {
 }
