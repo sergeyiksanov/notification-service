@@ -1,4 +1,4 @@
-module NotificationService
+module github.com/sergeyiksanov/NotificationService
 
 go 1.23.1
 
