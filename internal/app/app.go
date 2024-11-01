@@ -1,9 +1,9 @@
 package app
 
 import (
-	"NotificationService/internal/config"
-	"NotificationService/internal/handler"
 	"context"
+	"github.com/sergeyiksanov/notification-service/internal/config"
+	"github.com/sergeyiksanov/notification-service/internal/handler"
 	"log"
 
 	"github.com/rabbitmq/amqp091-go"
