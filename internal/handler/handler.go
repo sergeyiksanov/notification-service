@@ -1,7 +1,7 @@
 package handler
 
 import (
-	req "NotificationService/pkg/api/v1"
+	req "github.com/sergeyiksanov/notification-service/pkg/api/v1"
 	"log"
 
 	"github.com/rabbitmq/amqp091-go"

@@ -1,7 +1,7 @@
 package app
 
 import (
-	"NotificationService/internal/config"
+	"github.com/sergeyiksanov/notification-service/internal/config"
 	"log"
 )
 

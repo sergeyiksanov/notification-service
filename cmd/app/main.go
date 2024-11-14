@@ -1,8 +1,8 @@
 package main
 
 import (
-	"NotificationService/internal/app"
 	"context"
+	"github.com/sergeyiksanov/notification-service/internal/app"
 	"log"
 )
 
